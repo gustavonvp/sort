@@ -1,7 +1,7 @@
 import { Sorter } from "./Sorter";
 
 export class CharactersCollection extends Sorter {
-    constructor(public data: string) {
+    constructor(public data: string ) {
         super();
     }
 
@@ -11,7 +11,7 @@ export class CharactersCollection extends Sorter {
 
     compare(leftIndex: number, rightIndex: number): boolean {
         return(
-            this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase()
+            this.data[leftIndex].toLowerCase().toString() > this.data[rightIndex].toLowerCase().toString()
         );
     }
 

@@ -7,9 +7,9 @@ const numbersCollection = new NumbersCollection([3,2,1,-5,20,4,7,12]);
 numbersCollection.sort();
 console.log(numbersCollection.data);
 
-const charactersCollection = new CharactersCollection(' x a e t');
+const charactersCollection = new CharactersCollection('string');
 charactersCollection.sort();
-console.log(charactersCollection.data);
+console.log(charactersCollection.data.length);
 
 
 const linkedList = new LinkedList();
